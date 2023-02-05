@@ -52,7 +52,6 @@ protocol SchoolsViewModel {
  */
 class NYCSchoolsViewModel: SchoolsViewModel {
     private var schools = [NYCSchool]()
-    private let networkManager = NYCNetworkManager()
     var dataLoadingState = DataLoadingState.none
     private var schoolsByCity = [String: [NYCSchool]]()
     private var cities = [String]()
@@ -65,7 +64,7 @@ class NYCSchoolsViewModel: SchoolsViewModel {
         
         do {
             dataLoadingState = DataLoadingState.loading
-            let allSchools: [NYCSchool] = try await networkManager.getSchools([:])
+            let allSchools: [NYCSchool] = try await NYCNetworkManager.shared.getSchools([:])
             
             // Prepare required data.
             schools = allSchools

@@ -21,7 +21,7 @@ protocol School: Decodable {
 }
 
 /**
- A NYC school model object. 
+ A NYC school model object.
  */
 public struct NYCSchool: School {
     let school_name: String
@@ -46,7 +46,7 @@ public struct NYCSchool: School {
     
     var availableGrades: String {
         guard let grades = finalgrades else { return "Grades info not available." }
-        return "Offered grades: \(grades)"
+        return "Grades offered: \(grades)"
     }
     
     var address: String {
@@ -55,5 +55,49 @@ public struct NYCSchool: School {
         } else {
             return String(location.split(separator: "(")[0])
         }
+    }
+}
+
+
+protocol SATScore: Decodable {
+    var uID: String { get }
+    var schoolName: String { get }
+    var studentsCount: String { get }
+    var readingScore: String { get }
+    var mathScore: String { get }
+    var writingScore: String { get }
+}
+
+public struct NYCSATScore: SATScore {
+    let school_name: String
+    let num_of_sat_test_takers: String
+    let dbn: String
+    let sat_critical_reading_avg_score: String
+    let sat_math_avg_score: String
+    let sat_writing_avg_score: String
+
+    
+    var uID: String {
+        return dbn
+    }
+    
+    var schoolName: String {
+        return school_name
+    }
+    
+    var studentsCount: String {
+        return num_of_sat_test_takers
+    }
+    
+    var readingScore: String {
+        return sat_critical_reading_avg_score
+    }
+    
+    var mathScore: String {
+        return sat_math_avg_score
+    }
+    
+    var writingScore: String {
+        return sat_writing_avg_score
     }
 }

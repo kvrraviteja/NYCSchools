@@ -22,6 +22,8 @@
 		41280FBC298DAC2A00A237A5 /* SchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FBB298DAC2A00A237A5 /* SchoolsViewModel.swift */; };
 		41280FBE298DE25700A237A5 /* SchoolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FBD298DE25700A237A5 /* SchoolsTableViewCell.swift */; };
 		41280FC0298DE3D900A237A5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FBF298DE3D900A237A5 /* Utility.swift */; };
+		41280FC7298F1B1100A237A5 /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FC6298F1B1100A237A5 /* SchoolDetailsViewController.swift */; };
+		41280FC9298F1FF600A237A5 /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FC8298F1FF600A237A5 /* SchoolDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		41280FBB298DAC2A00A237A5 /* SchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsViewModel.swift; sourceTree = "<group>"; };
 		41280FBD298DE25700A237A5 /* SchoolsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewCell.swift; sourceTree = "<group>"; };
 		41280FBF298DE3D900A237A5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		41280FC6298F1B1100A237A5 /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
+		41280FC8298F1FF600A237A5 /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				41280F89298A98D900A237A5 /* SchoolsViewController.swift */,
+				41280FC6298F1B1100A237A5 /* SchoolDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				41280FBB298DAC2A00A237A5 /* SchoolsViewModel.swift */,
+				41280FC8298F1FF600A237A5 /* SchoolDetailsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -321,7 +327,9 @@
 				41280FC0298DE3D900A237A5 /* Utility.swift in Sources */,
 				41280F8A298A98D900A237A5 /* SchoolsViewController.swift in Sources */,
 				41280FBE298DE25700A237A5 /* SchoolsTableViewCell.swift in Sources */,
+				41280FC7298F1B1100A237A5 /* SchoolDetailsViewController.swift in Sources */,
 				41280FBC298DAC2A00A237A5 /* SchoolsViewModel.swift in Sources */,
+				41280FC9298F1FF600A237A5 /* SchoolDetailsViewModel.swift in Sources */,
 				41280F86298A98D900A237A5 /* AppDelegate.swift in Sources */,
 				41280FB8298A9DA100A237A5 /* School.swift in Sources */,
 				41280F88298A98D900A237A5 /* SceneDelegate.swift in Sources */,

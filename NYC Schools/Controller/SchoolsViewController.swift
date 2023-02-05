@@ -151,8 +151,10 @@ extension SchoolsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let school: NYCSchool = schoolsViewModel.school(indexPath.row, cityIndex: indexPath.section) {
-            print(school.name)
             // navigate to details view
+            let schoolDataViewController = SchoolDetailsViewController()
+            navigationController?.pushViewController(schoolDataViewController, animated: true)
+            schoolDataViewController.setUp(school)
         }
     }
 }
