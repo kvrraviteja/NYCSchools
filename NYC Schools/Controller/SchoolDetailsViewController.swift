@@ -11,7 +11,7 @@ import UIKit
 class SchoolDetailsViewController: UIViewController {
     let detailsViewModel = NYCSchoolDetailsViewModel()
     
-    // MARK: - Lazy variables
+    // MARK: - Lazy loading
     
     lazy var infoLabel: UILabel = {
         let label = UILabel(frame: .zero)

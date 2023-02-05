@@ -10,7 +10,7 @@ import Foundation
 /**
  List of APIs supported.
  */
-enum API {
+enum Route {
     case listSchools
     case listSATScores
 }
@@ -18,17 +18,17 @@ enum API {
 /**
  A url provider protocol
  */
-protocol URLProvider {
-    func baseURL(_ type: API) -> String
+protocol RouteProvider {
+    func baseURL(_ type: Route) -> String
 }
 
 /**
  NYC url provider.
  */
-struct NYCURLProvider: URLProvider {
+struct NYCRouteProvider: RouteProvider {
     private let token = "LsemPgGNsGircMaZb1jiCGEBC"
     
-    func baseURL(_ type: API) -> String {
+    func baseURL(_ type: Route) -> String {
         switch type {
         case .listSchools:
             return appendAppToken("https://data.cityofnewyork.us/resource/s3k6-pzi2.json")

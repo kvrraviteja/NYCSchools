@@ -14,6 +14,7 @@ class NYCSchoolDetailsViewModel {
     func fetchDetails(_ school: School) async {
         
         do {
+            // Get SAT scores for the given school.
             let fetchedScores : [NYCSATScore] = try await NYCNetworkManager.shared.getSATScore(["dbn": school.uID])
             
             scores = fetchedScores

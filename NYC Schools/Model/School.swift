@@ -44,6 +44,7 @@ public struct NYCSchool: School {
         return overview_paragraph
     }
     
+    // The custom logic should be done at the view model level.
     var availableGrades: String {
         guard let grades = finalgrades else { return "Grades info not available." }
         return "Grades offered: \(grades)"

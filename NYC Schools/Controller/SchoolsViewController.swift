@@ -20,6 +20,8 @@ class SchoolsViewController: UIViewController {
         prepareSchoolsData()
     }
     
+    // MARK: - Lazy loading
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -47,6 +49,8 @@ class SchoolsViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
+    
+    //MARK: - Prepare Data
 
     func prepareSchoolsData() {
         // Create an async task to fetch schools data,
@@ -73,6 +77,8 @@ class SchoolsViewController: UIViewController {
         }
     }
     
+    //MARK: - Interface
+
     private func setUpSchoolsTableView() {
         infoLabel.isHidden = true
 

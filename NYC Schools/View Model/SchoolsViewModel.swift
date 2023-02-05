@@ -49,6 +49,7 @@ protocol SchoolsViewModel {
 
 /**
  A NYC schools view model implementing schools view model protocol.
+ This prototype fetches all schools. Optionally, load school `N` schools data and as customers scroll through fetch next `N` schools.
  */
 class NYCSchoolsViewModel: SchoolsViewModel {
     private var schools = [NYCSchool]()
