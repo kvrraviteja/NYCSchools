@@ -159,6 +159,8 @@ class SchoolHeaderView: UITableViewHeaderFooterView {
     }
     
     private func setUpInterface() {
+        contentView.backgroundColor = .white
+
         contentView.addSubview(containerView)
         containerView.addSubview(titleLabel)
 

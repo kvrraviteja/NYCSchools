@@ -10,7 +10,7 @@ import Foundation
 /**
  Possible network errors.
  */
-public enum NetworkManagerError: Error {
+public enum NetworkManagerError: Error, Equatable {
     case invalidURL(url : String)
     case failedToFetchData
     case failedWithErrorCode(code: Int)
