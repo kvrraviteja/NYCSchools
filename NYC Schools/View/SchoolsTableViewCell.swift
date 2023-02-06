@@ -82,6 +82,8 @@ class SchoolsTableViewCell: UITableViewCell {
     }
     
     private func setUpInterface() {
+        contentView.backgroundColor = .white
+
         contentView.addSubview(containerView)
         containerView.addSubview(stackView)
         stackView.addArrangedSubview(titleLabel)

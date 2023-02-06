@@ -24,6 +24,9 @@
 		41280FC0298DE3D900A237A5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FBF298DE3D900A237A5 /* Utility.swift */; };
 		41280FC7298F1B1100A237A5 /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FC6298F1B1100A237A5 /* SchoolDetailsViewController.swift */; };
 		41280FC9298F1FF600A237A5 /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FC8298F1FF600A237A5 /* SchoolDetailsViewModel.swift */; };
+		41280FCB2990668100A237A5 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41280FCA2990668100A237A5 /* APIManagerTests.swift */; };
+		41676DC429906E7D007423F2 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41676DC329906E7D007423F2 /* NetworkManagerTests.swift */; };
+		41676DC629906EFD007423F2 /* NYCTestURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41676DC529906EFD007423F2 /* NYCTestURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		41280FBF298DE3D900A237A5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		41280FC6298F1B1100A237A5 /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
 		41280FC8298F1FF600A237A5 /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
+		41280FCA2990668100A237A5 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
+		41676DC329906E7D007423F2 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		41676DC529906EFD007423F2 /* NYCTestURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCTestURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				41280F9C298A98E100A237A5 /* NYC_SchoolsTests.swift */,
+				41280FCA2990668100A237A5 /* APIManagerTests.swift */,
+				41676DC329906E7D007423F2 /* NetworkManagerTests.swift */,
+				41676DC529906EFD007423F2 /* NYCTestURLProtocol.swift */,
 			);
 			path = "NYC SchoolsTests";
 			sourceTree = "<group>";
@@ -340,6 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41676DC429906E7D007423F2 /* NetworkManagerTests.swift in Sources */,
+				41280FCB2990668100A237A5 /* APIManagerTests.swift in Sources */,
+				41676DC629906EFD007423F2 /* NYCTestURLProtocol.swift in Sources */,
 				41280F9D298A98E100A237A5 /* NYC_SchoolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

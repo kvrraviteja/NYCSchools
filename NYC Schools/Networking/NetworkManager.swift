@@ -10,7 +10,7 @@ import Foundation
 /**
  Possible network errors.
  */
-enum NetworkManagerError: Error {
+public enum NetworkManagerError: Error {
     case invalidURL(url : String)
     case failedToFetchData
     case failedWithErrorCode(code: Int)
@@ -31,7 +31,7 @@ enum DataLoadingState {
 /**
  Protocol to define all required APIs.
  */
-protocol NetworkManager {
+public protocol NetworkManager {
     func getSchools<T: School>(_ params: [String: String]) async throws -> [T]
     func getSATScore<T: SATScore>(_ params: [String : String]) async throws -> [T]
 }
@@ -39,7 +39,7 @@ protocol NetworkManager {
 /**
 A NYC network manager, to provide NYC schools data.
  */
-struct NYCNetworkManager: NetworkManager {
+public struct NYCNetworkManager: NetworkManager {
     // Provide a singleton, where caller may choose to use default URLSession.
     static let shared = NYCNetworkManager()
 
@@ -53,7 +53,7 @@ struct NYCNetworkManager: NetworkManager {
         urlSession = URLSession.shared
     }
     
-    init(_ session: URLSession) {
+    public init(_ session: URLSession) {
         urlSession = session
     }
     
@@ -111,7 +111,7 @@ struct NYCNetworkManager: NetworkManager {
     /**
      Get NYC schools.
      */
-    func getSchools<T>(_ params: [String : String]) async throws -> [T] where T : School {
+    public func getSchools<T>(_ params: [String : String]) async throws -> [T] where T : School {
         // Prepare fianl url with baseUrl and query params if any.
         let urlString = constructUrl(urlProvider.baseURL(Route.listSchools), params: params)
 
@@ -121,7 +121,7 @@ struct NYCNetworkManager: NetworkManager {
     /**
      Get SAT Scores, with given parameters.
      */
-    func getSATScore<T>(_ params: [String : String]) async throws -> [T] where T : SATScore {
+    public func getSATScore<T>(_ params: [String : String]) async throws -> [T] where T : SATScore {
         // Prepare fianl url, with baseUrl and query params if any.
         let urlString = constructUrl(urlProvider.baseURL(Route.listSATScores), params: params)
         
